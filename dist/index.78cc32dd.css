@@ -1,0 +1,267 @@
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+*, :before, :after {
+  box-sizing: border-box;
+}
+
+:focus, :active, a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-size: 14px;
+  line-height: 1;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+a, a:visited, a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+body {
+  background-image: url("background.105e5720.jpg");
+  background-position: top;
+  background-size: cover;
+  font-family: Shantell Sans, cursive;
+}
+
+.app-wrap {
+  min-height: 100vh;
+  background-image: linear-gradient(#0000004d, #0006);
+  flex-direction: column;
+  display: flex;
+}
+
+header {
+  flex: 0 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 15px 15px;
+}
+
+.header-left {
+  min-width: 250px;
+  max-width: 280px;
+  border: 2px solid #b3b3b34d;
+  flex: 0 auto;
+  padding: 10px;
+}
+
+.header-right {
+  min-height: 405px;
+  border: 2px solid #b3b3b34d;
+  flex: 1 0 auto;
+  padding: 10px;
+}
+
+header input {
+  width: 100%;
+  max-width: 280px;
+  color: #3a3939;
+  background-color: #ffffff4d;
+  border-bottom: 3px solid #447f96;
+  border-radius: 20px 0;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: 300;
+  transition: all .2s ease-out;
+}
+
+header input:focus {
+  background-color: #fff9;
+}
+
+main {
+  max-width: 700px;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+  display: flex;
+}
+
+.city {
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.date {
+  color: #fff;
+  font-size: 16px;
+}
+
+.current .temp {
+  color: #fff;
+  text-shadow: 2px 10px #0009;
+  margin: 10px 0;
+  font-size: 60px;
+  font-weight: 900;
+}
+
+.current .temp span {
+  font-weight: 500;
+}
+
+.current .weather {
+  color: #fff;
+  text-shadow: 0 3px #0006;
+  margin-bottom: 15px;
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.current .hi-low {
+  color: #fff;
+  text-shadow: 0 4px #0006;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.weather-button {
+  box-sizing: border-box;
+  color: #3a3939;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  user-select: none;
+  touch-action: manipulation;
+  background-color: #4682b480;
+  border: 0;
+  border-radius: 0 20px;
+  outline: none;
+  flex: auto;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 1rem 1.2rem;
+  font-family: Inter, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
+  transition: box-shadow .2s, -webkit-box-shadow .2s;
+  display: inline-flex;
+  box-shadow: 0 0 0 3px #0000, 0 6px 20px #1212121a;
+}
+
+.weather-button:hover {
+  box-shadow: 0 0 0 3px #3c719c80, 0 0 #0000;
+}
+
+.weather-icon {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+}
+
+.large {
+  width: 120px;
+  height: 120px;
+}
+
+.day-section {
+  grid-template-columns: repeat(auto-fit, 90px);
+  justify-content: center;
+  gap: .5rem;
+  padding: .4rem;
+  display: grid;
+}
+
+.day-card {
+  color: #a5d6f3;
+  background-color: #344b5899;
+  border: 3px solid #889392;
+  border-radius: 2rem 0;
+  flex-direction: column;
+  align-items: center;
+  padding: .25rem;
+  font-size: .9rem;
+  display: flex;
+}
+
+.day-card-day {
+  color: #fff;
+  margin-top: .6rem;
+  font-size: 1rem;
+}
+
+.hour-section {
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  border-spacing: 0;
+  border: 4px solid #5e7e8d;
+  margin: 10px 0;
+}
+
+.hour-row {
+  background-color: #99cce64d;
+}
+
+.hour-row:nth-child(2n) {
+  background-color: #85c2e04d;
+}
+
+.hour-row > td {
+  padding: .25rem .5rem;
+}
+
+/*# sourceMappingURL=index.78cc32dd.css.map */
